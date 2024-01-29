@@ -72,10 +72,15 @@ namespace COMP003A.ASSIGNMENT2
             Console.WriteLine("CIRCLE AREA & CIRCUMFERENCE CALCULATOR");
             Console.WriteLine("***************************************************************");
 
+            string sRadius;
+            Console.WriteLine("PLEASE ENTER A RADIUS NUMBER");
+            sRadius = Console.ReadLine();
 
+            double radius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Area: {radius}");
 
-
-
+            double circumference = 2 * Math.PI * radius;
+            Console.WriteLine($"Circumference{circumference}");
         }
     }
 }
