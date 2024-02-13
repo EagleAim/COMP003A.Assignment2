@@ -21,25 +21,28 @@ namespace COMP003A.ASSIGNMENT2
             Console.WriteLine("PRESS ENTER TO CONTINUTE");
             Console.WriteLine("***************************************************************");
 
-            string firstName = Console.ReadLine();
+            
             Console.WriteLine("PLEASE ENTER FIRST NAME");
+            string firstName = Console.ReadLine();
             firstName = Console.ReadLine();
            
 
-            string middleName = Console.ReadLine();
+            
             Console.WriteLine("PLEASE ENTER MIDDLE NAME");
+            string middleName = Console.ReadLine();
             middleName = Console.ReadLine();
         
 
-            string lastName = Console.ReadLine();
+            
             Console.WriteLine("PLEASE ENTER LAST NAME");
+            string lastName = Console.ReadLine();
             lastName = Console.ReadLine();
          
 
-            string inputAge = Console.ReadLine();
             Console.WriteLine("PLEASE ENTER YOUR AGE");
-            inputAge = Console.ReadLine();
+            string inputAge = Console.ReadLine();
             int yearBorn = 2023 - Convert.ToInt32(inputAge);
+            inputAge = Console.ReadLine();
             Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.");
 
             //Math
@@ -47,12 +50,12 @@ namespace COMP003A.ASSIGNMENT2
             Console.WriteLine("MATH");
             Console.WriteLine("***************************************************************");
 
-            string number1;
             Console.WriteLine("PLEASE ENTER YOUR FIRST NUMBER");
+            string number1;
             number1 = Console.ReadLine();
 
-            string number2;
             Console.WriteLine("PLEASE ENTER YOUR SECOND NUMBER");
+            string number2;
             number2 = Console.ReadLine();
 
             int intiger1 = Convert.ToInt32(number1);
@@ -71,16 +74,15 @@ namespace COMP003A.ASSIGNMENT2
             Console.WriteLine("***************************************************************");
             Console.WriteLine("CIRCLE AREA & CIRCUMFERENCE CALCULATOR");
             Console.WriteLine("***************************************************************");
-
-            string sRadius;
             Console.WriteLine("PLEASE ENTER A RADIUS NUMBER");
-            sRadius = Console.ReadLine();
-
+            string Radius;
             double radius = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"Area: {radius}");
 
+            double area = Math.PI * Math.Pow(radius, 2);
             double circumference = 2 * Math.PI * radius;
-            Console.WriteLine($"Circumference{circumference}");
+
+            Console.WriteLine(area);
+            Console.WriteLine(circumference);
         }
     }
 }
